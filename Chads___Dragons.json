@@ -1,0 +1,623 @@
+{
+	"siteVersion": "1.131.2",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ChadsDragons",
+				"abbreviation": "CD",
+				"full": "Chads & Dragons",
+				"url": "",
+				"authors": [
+					"Frank Lammers"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1624042378,
+		"dateLastModified": 1624042378
+	},
+	"monster": [
+		{
+			"name": "KR-15",
+			"isNamedCreature": true,
+			"source": "ChadsDragons",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"warforged"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 15,
+			"save": {
+				"con": "+4",
+				"wis": "+2"
+			},
+			"passive": 10,
+			"vulnerable": [
+				"lightning"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"The knight has advantage on saving throws against being {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The knight makes two melee attacks."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"Melee Weapon Attack:_ {@hit 5} to hit, reach 5 ft., one target. _Hit:_ 10 ({@damage 2d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"Ranged Weapon Attack:_ {@hit 2} to hit, range 100/400 ft., one target. _Hit:_ 5 ({@damage 1d10}) piercing damage."
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a Short or Long Rest)",
+					"entries": [
+						"For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 ft. of it makes an attack roll or a saving throw. The creature can add a {@dice d4} to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Self destruct",
+					"entries": [
+						"KR-15 casts fireball on itself with a Dex save DC of 15"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"RNG"
+			]
+		},
+		{
+			"name": "Xandra",
+			"isNamedCreature": true,
+			"source": "ChadsDragons",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"arcana": "+5",
+				"history": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"lightning"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"Elvish"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Xandra is a 4th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The mage has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell sleep}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell cloud of daggers}",
+								"{@spell invisibility}"
+							]
+						},
+						"3": {
+							"slots": 0,
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell fly}"
+							]
+						},
+						"4": {
+							"slots": 0,
+							"spells": [
+								"{@spell greater invisibility}",
+								"{@spell ice storm}"
+							]
+						},
+						"5": {
+							"slots": 0,
+							"spells": [
+								"{@spell cone of cold}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"Melee or Ranged Weapon Attack:_ {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"E"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"unconscious"
+			]
+		},
+		{
+			"name": "Barroc",
+			"isNamedCreature": true,
+			"source": "ChadsDragons",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d8 + 36"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 16,
+			"int": 7,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"intimidation": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"conditionImmune": [
+				"blinded"
+			],
+			"languages": [
+				"Common",
+				"Orc"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Enhanced Right Arm",
+					"entries": [
+						"When Barroc rolls lower than 10 on his Longsword attack roll, he gets advantage"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Barroc makes two attacks. One with his Greataxe and one with his Longsword"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"Melee Weapon Attack:_ {@hit 5} to hit, reach 5 ft., one target. _Hit:_ 7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"Melee Weapon Attack:_ {@hit 5} to hit, reach 5 ft., one target. _Hit:_ 7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Trip Attack (3/Day)",
+					"entries": [
+						"When Barroc hits a creature with a weapon attack, he can expend one charge to attempt to knock the target down. +5 to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw 13. On a failed save, he knocks the target {@condition prone}."
+					]
+				}
+			],
+			"traitTags": [
+				"Aggressive"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"O"
+			],
+			"damageTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Julec",
+			"isNamedCreature": true,
+			"source": "ChadsDragons",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnome"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 54,
+				"formula": "12d8"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"arcana": "+5",
+				"history": "+5"
+			},
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 11,
+			"conditionImmune": [
+				"blinded"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Gnomish",
+				"Terran"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Julec is a 4th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The mage has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Acid Splash}",
+								"{@spell Lightning Lure|TCE}"
+							]
+						},
+						"1": {
+							"slots": 3,
+							"spells": [
+								"{@spell Catapult|XGE}",
+								"{@spell Shield}",
+								"{@spell Heroism}"
+							]
+						},
+						"2": {
+							"slots": 0,
+							"spells": [
+								"{@spell branding smite}",
+								"{@spell warding bond}"
+							]
+						},
+						"3": {
+							"slots": 0,
+							"spells": [
+								"{@spell aura of vitality}",
+								"{@spell conjure barrage}"
+							]
+						},
+						"4": {
+							"slots": 0,
+							"spells": [
+								"{@spell aura of purity}",
+								"{@spell fire shield}"
+							]
+						},
+						"5": {
+							"slots": 0,
+							"spells": [
+								"{@spell banishing smite}",
+								"{@spell mass cure wounds}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"Melee or Ranged Weapon Attack:_ {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. _Hit:_ 4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"Melee Weapon Attack:_ {@hit 6} to hit, reach 5 ft., one target. _Hit:_ 7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"G",
+				"T"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflictSpell": [
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Kalinda",
+			"isNamedCreature": true,
+			"source": "ChadsDragons",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 77,
+				"formula": "14d8 + 14"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 12,
+			"wis": 10,
+			"cha": 15,
+			"skill": {
+				"acrobatics": "+5",
+				"intimidation": "+4",
+				"perception": "+2",
+				"stealth": "+7"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Thieves cant"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"Kalinda can use a bonus action to Dash, Disengage, or Hide."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"Kalinda deals an extra 3 ({@damage 1d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of one of its allies that isn't incapacitated and the rogue doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Boots of the winding path",
+					"entries": [
+						"While wearing these boots, a creature can teleport up to 15 feet as a bonus action to an unoccupied space the creature can see. The creature must have occupied that space at some point during the current turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"Melee Weapon Attack:_ {@hit 5} to hit, reach 5 ft., one target. _Hit:_ 5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"Ranged Weapon Attack:_ {@hit 5} to hit, range 30/120 ft., one target. _Hit:_ 6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RNG"
+			]
+		}
+	]
+}
